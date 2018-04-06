@@ -1,0 +1,1 @@
+python3 US-choropleth.py ./data/DEC_10_SF1_H6_with_ann_pcts.csv -g county -m FIPS  -c non_white_householder_pct -cm Oranges -cbl % -p ESRI:102003 -t "Percent of Non-White or Mixed-Race Householders in Occupied Housing Units" -ts "2010 U.S. Decennial Census" -e png -f "US-County-Non-White-Householders" -o

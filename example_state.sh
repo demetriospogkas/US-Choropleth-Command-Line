@@ -1,0 +1,1 @@
+python3 US-choropleth.py ./data/qgdpstate0118_pctch.csv -g state -mg fullname -md state -c 2017Q3 -cm Blues -cbl % -p ESRI:102003 -t "Percent Change in Real Gross Domestic Product (GDP) by State, 2017:Q3" -ts "U.S. Bureau of Economic Analysis" -e svg -f "US-State-GDP-Change-2017Q3" -o
