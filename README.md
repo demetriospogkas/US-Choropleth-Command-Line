@@ -59,7 +59,7 @@ In order to generate your map, customize its styles, and choose between differen
 For state-level map:  
 `python3 US-choropleth.py ./data/qgdpstate0118_pctch.csv -g state -mg fullname -md state -c 2017Q3 -cm Blues -cbl % -p ESRI:102003 -t "Percent Change in Real Gross Domestic Product (GDP) by State, 2017:Q3" -ts "U.S. Bureau of Economic Analysis" -e svg -f "US-State-GDP-Change-2017Q3" -o`
 
-![](https://github.com/demetriospogkas/US-Choropleth-Command-Line/blob/master/examples/US-State-GDP-Change-2017Q3.svg "U.S. Choropleth - State Level")
+![](https://github.com/demetriospogkas/US-Choropleth-Command-Line/blob/master/examples/US-State-GDP-Change-2017Q3.png "U.S. Choropleth - State Level")
 
 For county-level map:  
 `python3 US-choropleth.py ./data/DEC_10_SF1_H6_with_ann_pcts.csv -g county -m FIPS  -c non_white_householder_pct -cm Oranges -cbl % -p ESRI:102003 -t "Percent of Non-White or Mixed-Race Householders in Occupied Housing Units" -ts "2010 U.S. Decennial Census" -e png -f "US-County-Non-White-Householders" -o`
