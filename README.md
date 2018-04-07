@@ -18,7 +18,7 @@ pipenv shell
 python US-choropleth.py ./data/qgdpstate0118_pctch.csv -g state -mg fullname -md state -c 2017Q3 -cm Blues -cbl % -p ESRI:102003 -t "Percent Change in Real Gross Domestic Product (GDP) by State, 2017:Q3" -ts "U.S. Bureau of Economic Analysis" -e svg -f "US-State-GDP-Change-2017Q3" -o
 ```
 
-![U.S. Choropleth - State Level](examples/US-State-GDP-Change-2017Q3.png)
+![U.S. Choropleth - State Level](outputs/US-State-GDP-Change-2017Q3.png)
 
 ### Details
 
@@ -34,6 +34,8 @@ Your data set should have at least two columns:
 2. A column with values you will generate the color-coding of the geometry shapes on.
 
 In order to generate your map, customize its styles, and choose between different export options, you can use the optional arguments/flags below. Some arguments are required for generating the map (for example, the columns you are merging on, or the column you are color-coding on), and if you don't pass them in your script run, you will be prompted to input them later on (see instructions below).
+
+Your generated maps are saved in the `outputs` directory.
 
 #### Positional arguments
 
@@ -75,7 +77,7 @@ For state-level map:
 python US-choropleth.py ./data/qgdpstate0118_pctch.csv -g state -mg fullname -md state -c 2017Q3 -cm Blues -cbl % -p ESRI:102003 -t "Percent Change in Real Gross Domestic Product (GDP) by State, 2017:Q3" -ts "U.S. Bureau of Economic Analysis" -e svg -f "US-State-GDP-Change-2017Q3" -o
 ```
 
-![U.S. Choropleth - State Level](examples/US-State-GDP-Change-2017Q3.png)
+![U.S. Choropleth - State Level](outputs/US-State-GDP-Change-2017Q3.png)
 
 For county-level map:
 
@@ -83,7 +85,7 @@ For county-level map:
 python US-choropleth.py ./data/DEC_10_SF1_H6_with_ann_pcts.csv -g county -m FIPS  -c non_white_householder_pct -cm Oranges -cbl % -p ESRI:102003 -t "Percent of Non-White or Mixed-Race Householders in Occupied Housing Units" -ts "2010 U.S. Decennial Census" -e png -f "US-County-Non-White-Householders" -o
 ```
 
-![U.S. Choropleth - County Level](examples/US-County-Non-White-Householders.png)
+![U.S. Choropleth - County Level](outputs/US-County-Non-White-Householders.png)
 
 #### U.S. State codes
 
