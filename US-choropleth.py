@@ -232,6 +232,7 @@ def prepare_plot(plot_df):
         else:
             print("Saving plot to PNG...")
             fname = fname + ".png"
+        fname = "./outputs/" + fname
         plt.savefig(fname)
         return fname
 
